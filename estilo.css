@@ -1,0 +1,531 @@
+@font-face {
+    font-family: 'vasco';
+    src: url('Long_Shot.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Oxanium';
+    src: url('/Oxanium-VariableFont_wght.ttf') format('truetype');
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: aliceblue;
+    box-sizing: border-box;
+    font-family: 'Oxanium';
+}
+
+body* {
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+
+/* Header */
+
+.opt-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #313131;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Oxanium';
+    position: fixed;
+    width: 100vw;
+}
+.opt{
+    padding-right: 4%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.logo-home img{
+    width: 75px;
+}
+
+.logo-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.opt ul{
+    display: flex;
+    list-style-type: none;
+}
+.opt li{
+    padding:4px 15px;
+    letter-spacing: 1.5px;
+}
+.opt li:hover, button:hover{
+    background: #838383;
+    border-radius: 3px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+button{
+    color: #f7f7f7;
+    background: #313131;
+    border: none;
+    font-size: 40px;
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    display: none;
+   
+}
+button:focus~.opt{
+    height: 100px;
+    transition: 900ms;
+}
+
+/*main*/
+
+.page1{
+    border-top:0.05px solid #ffffffce;
+    padding: 0px 0px;
+    height: 100vh;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.texto-esquerda{
+    width: 65vw;
+    padding-left: 5%;
+}
+.texto-esquerda div{
+    font-family: 'Oxanium';
+    font-size: 50px;
+    text-align: center;
+    font-size: 5em;
+
+}
+.marca{
+    font-size: 1em;
+    font-family: 'vasco';
+    margin-top: 0;
+    margin-bottom: 5%;
+    
+}
+
+.descricao{
+    font-size: 0.3em;
+    border-left: 1px solid #ff0b0b;
+    padding-left: 30px;
+    text-align: left;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 0;
+}
+
+.texto-direita{
+    width: 35vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: #ff0b0b;
+    margin-bottom: 3px;
+    
+}
+
+.imagem{
+    width: 100%;
+    
+}
+img{
+    width: 100%;
+    
+}
+
+/* Page 2 mapa */
+
+.page2{
+    border-top:0.05px solid #ffffffce;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    margin-bottom: 30px;
+}
+
+.infos-mapa{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.descricao-mapa{
+    font-family: 'Oxanium';
+    font-size: 2em;
+    padding-left: 5%;
+    color: #f7f7f7;
+}
+.mapa{
+    padding: 10px 20px;
+    width: 50vw;
+    opacity: 100%;
+}
+
+.mapa iframe{
+    box-shadow: 5px 5px 15px rgb(59, 59, 59);
+    width: 100%; 
+    height: 270px;
+}
+
+/* Page 3 carrossel */
+
+.page3 {
+    border-top:0.05px solid #ffffffce;
+    display: flex;
+    flex-direction: column;
+    background: rgb(0, 0, 0);
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    padding-bottom: 25px;
+    
+}
+
+.topicos{
+    color: #f7f7f7;
+    font-family: 'Oxanium';
+    font-size: 3em;
+    text-align: center;
+}
+
+/* Carroussel*/
+
+.carroussel{
+     width: 60%;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+}
+
+.fotos{
+    display: flex;
+    overflow-x: auto;
+    height: 60%;
+    scroll-snap-type: x mandatory;
+}
+
+.fotos::-webkit-scrollbar{
+    background: rgba(182, 182, 182, 0);
+    height: 6px;
+    width: 9px;
+    opacity: 2%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.fotos::-webkit-scrollbar:hover{
+    height: 9px;
+}
+
+.fotos::-webkit-scrollbar-thumb{
+    background: #ff0b0b38;
+    border-radius: 15px;
+}
+.fotos::-webkit-scrollbar-thumb:hover{
+    background: #ff0b0b9f;
+    transition: .6ms;
+}
+
+.imagens{
+    width: 100%;
+    height: 100%;
+    flex: none;
+    object-fit: cover;
+    scroll-snap-align: start;
+}
+
+
+
+.descricao-metodologia{
+    margin-top: 20px;
+    font-family: 'Oxanium';
+    font-size: 1.3em;
+    color: #f7f7f7;
+    text-align: center;
+}
+
+/* Page 4 formulario */
+
+.page4{
+    border-top:0.05px solid #ffffffce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(170, 170, 170);
+    flex-direction: column;
+    color: #000000;
+    font-family: 'Oxanium';
+    padding-bottom: 5% ;
+}
+
+.page4 h1{
+    text-align: center;
+    margin-top: 4%;
+}
+
+.page4 form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.page4 input, select{
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    background: #cecece;
+    margin-bottom: 4px;
+}
+
+.page4 input::placeholder{
+    font-family: 'Oxanium';
+    padding-left: 5px;
+    color: #444444;
+}
+
+option{
+    padding: 5px;
+    color: #444444;
+}
+
+
+fieldset{
+    border: none;
+    display: flex;
+    border-radius: 8px;
+    border: none;
+   /* background: #cecece; */
+    margin-bottom: 4px;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 4px;
+    
+
+}
+select{
+    padding-left: 5px;
+}
+fieldset div{
+    display: flex;
+    align-self: self-end;
+}
+fieldset h1{
+    color: #444444;
+    font-size: 1em;
+    font-weight: lighter;
+    text-align: left;
+}
+.sexo{
+    display: flex;
+    align-items: center;
+    font-family: 'Oxanium';
+    color: #444444;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1200px) {
+
+
+    .page1{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .texto-esquerda{
+        padding-top: 5%;
+        width: 100%;
+        padding-left: 0;
+    }
+    .descricao{
+        font-size: 25px;
+    }
+
+    .texto-direita{
+        width: 100%;
+        justify-content:center;
+    }
+
+    .imagem{
+        width: 50%;
+        
+    }
+
+    .page3{
+        height: auto;
+    }
+
+    .carroussel{
+        width: 80vw;
+    }
+
+    /* mapa */
+
+    .infos-mapa{
+        flex-direction: column-reverse;
+
+    }
+    .mapa{
+        width: 80vw;
+    }
+    .descricao-mapa{
+        padding: 20px 5%;
+        font-size: 20px;
+
+    }
+
+    /* Forms */
+    .page4 h1{
+        text-align: center;
+        margin-top: 4%;
+        font-size: 20px;
+    }
+    
+    .page4 form{
+        width: 90%;
+    }
+}
+
+/* footer */
+.conteudo-footer{
+    display: flex;
+    width: 100%;
+}
+
+ul{
+    list-style-type: none;
+    font-family: 'Oxanium';
+}
+li{
+    margin: 0 13px;
+    font-size: 0.8em;
+}
+.conteudo-footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.lista-horarios{
+    display: flex;
+}
+
+.horarios-detalhe{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.redes-socias li::first-letter{
+    font-weight: bold;
+}
+
+.redes-socias li a{
+  margin: 0 ;
+  display: flex;  
+  align-items: center;
+}
+
+.redes-socias img{
+   width: 20px;
+   margin-right: 10px;
+}
+
+@media screen and (max-height: 800px) {
+    .page3{
+        height: 700px;
+    }
+
+     .carroussel{
+         height: 100%;
+     }
+
+    .imagem{
+        width: 50%;
+    }
+    
+
+}
+
+@media screen and (max-width: 822px) {
+    .page2{
+        margin: 0 10px;
+    }
+
+
+    .descricao{
+        margin-left:100px;
+        margin-right:100px;
+    }
+}
+
+@media screen and (max-width: 606px) {
+     
+    .opt-header{
+        width: 90%;
+    }
+    
+     .logo-menu{
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        
+     }
+     .opt-header{
+         flex-direction: column;
+     }
+     .opt ul{
+        flex-direction: column;
+        text-align: center;
+     }
+     button{
+         display: flex;
+         right: 28px;
+     }
+    
+     .opt {
+        width: 100%;
+        height: 0px;
+        justify-content: center;
+    }
+   
+}
+
+@media screen and (max-width: 500px) {
+    .titulo1{
+        padding-top: 35px;
+        font-size: 50px
+    }
+    .descricao{
+        margin-left:50px;
+        margin-right:50px;
+    }
+
+    .conteudo-footer{
+        align-items: center;
+        
+    }
+    .lista-horarios{
+        padding-left: 3px;
+        display: flex;
+        flex-direction: column;
+    }
+}
