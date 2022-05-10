@@ -221,15 +221,15 @@ img{
 
 .fotos::-webkit-scrollbar{
     background: rgba(182, 182, 182, 0);
-    height: 6px;
+    height: 9px;
     width: 9px;
-    opacity: 2%;
+    opacity: 1%;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
 .fotos::-webkit-scrollbar:hover{
-    height: 9px;
+    height: 15px;
 }
 
 .fotos::-webkit-scrollbar-thumb{
@@ -238,6 +238,7 @@ img{
 }
 .fotos::-webkit-scrollbar-thumb:hover{
     background: #ff0b0b9f;
+    height: 15px;
     transition: .6ms;
 }
 
