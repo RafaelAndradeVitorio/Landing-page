@@ -4,7 +4,7 @@
 }
 @font-face {
     font-family: 'Oxanium';
-    src: url('/Oxanium-VariableFont_wght.ttf') format('truetype');
+    src: url('/Landing-page//Oxanium-VariableFont_wght.ttf') format('truetype');
 }
 html {
     scroll-behavior: smooth;
