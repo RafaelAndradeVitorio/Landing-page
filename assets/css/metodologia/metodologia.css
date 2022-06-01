@@ -1,0 +1,66 @@
+.metodologia {
+    border-top:0.05px solid #ffffffce;
+    display: flex;
+    flex-direction: column;
+    background: rgb(0, 0, 0);
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    padding-bottom: 25px;
+    
+}
+
+/* Carroussel*/
+
+.metodologia__carroussel{
+     width: 60%;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+}
+
+.metodologia__carroussel__fotos{
+    display: flex;
+    overflow-x: auto;
+    height: 60%;
+    scroll-snap-type: x mandatory;
+}
+
+.metodologia__carroussel__fotos::-webkit-scrollbar{
+    background: rgba(182, 182, 182, 0);
+    height: 9px;
+    width: 9px;
+    opacity: 1%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.metodologia__carroussel__fotos::-webkit-scrollbar:hover{
+    height: 15px;
+}
+
+.fotos::-webkit-scrollbar-thumb{
+    background: #ff0b0b38;
+    border-radius: 15px;
+}
+.fotos::-webkit-scrollbar-thumb:hover{
+    background: #ff0b0b9f;
+    height: 15px;
+    transition: .6ms;
+}
+
+.metodologia__carroussel__imagens{
+    width: 100%;
+    height: 100%;
+    flex: none;
+    object-fit: cover;
+    scroll-snap-align: start;
+}
+
+.metodologia__descricao{
+    margin-top: 20px;
+    font-family: 'Oxanium';
+    font-size: 1.3em;
+    color: #f7f7f7;
+    text-align: center;
+}
