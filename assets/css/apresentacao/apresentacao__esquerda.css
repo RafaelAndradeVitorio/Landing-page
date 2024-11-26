@@ -1,16 +1,12 @@
-.apresentacao{
-    border-top:0.05px solid #ffffffce;
-    padding: 0px 0px;
-    height: 100vh;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-}
-
 .apresentacao__esquerda{
     width: 65vw;
     padding-left: 5%;
 }
+
+.apresentacao__esquerda__titulo{
+    margin-bottom: 33px;
+}
+
 .apresentacao__esquerda div{
     font-family: 'Oxanium';
     font-size: 50px;
@@ -26,11 +22,9 @@
 }
 
 .apresentacao__esquerda__descricao{
-    font-size: 0.3em;
+    font-size: 23px;
     border-left: 1px solid #ff0b0b;
     padding-left: 30px;
     text-align: left;
-    margin-left: 250px;
-    margin-right: 250px;
     margin-top: 0;
 }

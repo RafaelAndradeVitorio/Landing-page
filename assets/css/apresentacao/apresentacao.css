@@ -1,0 +1,17 @@
+.apresentacao{
+    background-image: url("../../imagens/apresentacao.png");
+    background-repeat:no-repeat ;
+    background-size: cover;
+    /* border-top:0.05px solid #ffffffce; */
+    padding: 0px 0px;
+    height: 100vh;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.apresentacao__trofeus{
+    img {
+        width: 100%;
+    }
+}

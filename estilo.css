@@ -8,10 +8,6 @@
     src: url('./assets/fontes/Oxanium-VariableFont_wght.ttf') format('truetype');
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -19,6 +15,7 @@ body {
     color: aliceblue;
     box-sizing: border-box;
     font-family: 'Oxanium';
+    scroll-behavior: smooth !important;
 }
 
 body* {
@@ -38,32 +35,43 @@ body* {
 @media screen and (max-width: 1200px) {
 
 
-.apresentacao {
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-}
-.apresentacao__esquerda {
-    padding-top: 5%;
-    width: 100%;
-    padding-left: 0;
-}
-.descricao {
-    font-size: 25px;
-}
-.apresentacao__direita {
-    width: 100%;
-    justify-content: center;
-}
-.imagem {
-    width: 50%;
-}
-.metodologia {
-    height: auto;
-}
-.carroussel {
-    width: 80vw;
-}
+    .apresentacao {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        background: black;
+    }
+
+    .apresentacao__esquerda {
+        padding-top: 5%;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .descricao {
+        font-size: 25px;
+    }
+
+    .apresentacao__direita {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .apresentacao__direita__imagem img {
+        width: 50%;
+    }
+
+    .imagem {
+        width: 50%;
+    }
+
+    .metodologia {
+        height: auto;
+    }
+
+    .carroussel {
+        width: 80vw;
+    }
 
     /* localizacao__mapa */
 
@@ -98,6 +106,7 @@ body* {
 .conteudo-footer {
     display: flex;
     width: 100%;
+    margin: 21px 0;
 }
 
 ul {
@@ -112,8 +121,13 @@ li {
 
 .conteudo-footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
+}
+
+.fab{
+    font-size: 30px;
+    color: #b29a3e;
 }
 
 .lista-horarios {
@@ -124,6 +138,11 @@ li {
     display: flex;
     flex-direction: column;
 
+}
+
+.redes-socias{
+    display: flex;
+    flex-direction: row;
 }
 
 .redes-socias li::first-letter {
@@ -142,10 +161,6 @@ li {
 }
 
 @media screen and (max-height: 800px) {
-    .metodologia {
-        height: 700px;
-    }
-
     .carroussel {
         height: 100%;
     }
@@ -164,8 +179,7 @@ li {
 
 
     .apresentacao__esquerda__descricao {
-        margin-left: 100px;
-        margin-right: 100px;
+        max-width: 294px;
     }
 }
 
@@ -186,6 +200,7 @@ li {
 
     .menu {
         flex-direction: column;
+        background: transparent;
     }
 
     .menu__opcoes ul {
@@ -193,15 +208,41 @@ li {
         text-align: center;
     }
 
-    button {
+    .menu__buttom_hamburguer {
         display: flex;
         right: 28px;
+        background: transparent;
     }
 
     .menu__opcoes {
         width: 100%;
         height: 0px;
         justify-content: center;
+        background: black;
+    }
+
+    .apresentacao__direita__imagem {
+        text-align:center;
+        img {
+            width: 50%;
+        }
+    }
+
+    .metodologia__carroussel {
+        width: 100%;
+    }
+
+    .metodologia__botoes,
+    .next,
+    .prev{
+        display: none;
+    }
+
+    .metodologia__descricao {
+        text-align: left;
+        padding-left: 11px;
+        max-width: 95%;
+        border-left: 1px solid #ff0b0b;
     }
 
 }

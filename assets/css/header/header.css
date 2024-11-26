@@ -18,7 +18,7 @@
 .menu__logo img{
     width: 75px;
 }
-button{
+.menu__buttom_hamburguer{
     color: #f7f7f7;
     background: #313131;
     border: none;
@@ -29,7 +29,7 @@ button{
     display: none;
    
 }
-button:focus~.menu__opcoes{
+.menu__buttom_hamburguer:focus~.menu__opcoes{
     height: 100px;
     transition: 900ms;
 }
@@ -48,7 +48,7 @@ button:focus~.menu__opcoes{
     padding:4px 15px;
     letter-spacing: 1.5px;
 }
-.menu__opcoes li:hover, button:hover{
+.menu__opcoes li:hover, .menu__buttom_hamburguer:hover{
     background: #838383;
     border-radius: 3px;
     cursor: pointer;

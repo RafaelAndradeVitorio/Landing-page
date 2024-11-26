@@ -1,22 +1,43 @@
 .metodologia {
-    border-top:0.05px solid #ffffffce;
     display: flex;
     flex-direction: column;
     background: rgb(0, 0, 0);
     text-align: center;
-    height: 100vh;
     align-items: center;
     padding-bottom: 25px;
     
 }
 
 /* Carroussel*/
+.metodologia__navegacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 65px;
+    position: static !important;
+    color: #b29a3e;
+}
+
+.metodologia__navegacao .contador {
+    margin: 0 15px;
+    font-size: 16px;
+}
 
 .metodologia__carroussel{
      width: 60%;
      text-align: center;
      display: flex;
-     flex-direction: column;
+     flex-direction: row;
+    gap: 19px;
 }
 
 .metodologia__carroussel__fotos{
@@ -24,6 +45,10 @@
     overflow-x: auto;
     height: 60%;
     scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    --sb-track-color: #404040;
+    --sb-thumb-color: #ffffff;
+    --sb-size: 10px;
 }
 
 .metodologia__carroussel__fotos::-webkit-scrollbar{
@@ -33,6 +58,7 @@
     opacity: 1%;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    width: var(--sb-size);
 }
 
 .metodologia__carroussel__fotos::-webkit-scrollbar:hover{
@@ -40,8 +66,8 @@
 }
 
 .fotos::-webkit-scrollbar-thumb{
-    background: #ff0b0b38;
-    border-radius: 15px;
+    background: var(--sb-thumb-color);
+    border-radius: 3px;
 }
 .fotos::-webkit-scrollbar-thumb:hover{
     background: #ff0b0b9f;
@@ -55,6 +81,10 @@
     flex: none;
     object-fit: cover;
     scroll-snap-align: start;
+}
+
+.metodologia__botoes{
+    padding-top: 10px;
 }
 
 .metodologia__descricao{
